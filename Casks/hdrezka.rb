@@ -1,6 +1,6 @@
 cask "hdrezka" do
   version "1.0.37"
-  sha256 "e043edada5b3ead7a2ac802f5d243c9d205ee2d18519e9fa03eae28045bab3c0"
+  sha256 "ae928264ddb06422ad55993618dc7fb82bf1d2207809f754c7012b740edaad07"
 
   url "https://voidboost.github.io/hdrezka-releases/HDrezka.dmg"
   name "HDrezka"
@@ -15,7 +15,7 @@ cask "hdrezka" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "HDrezka.app"
 
