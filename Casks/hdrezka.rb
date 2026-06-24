@@ -1,6 +1,6 @@
 cask "hdrezka" do
   version "1.0.37"
-  sha256 "ae928264ddb06422ad55993618dc7fb82bf1d2207809f754c7012b740edaad07"
+  sha256 "42e13cb1adb53b2f46f1cfde5a0970c76ad2491466882d4f182e1634e82ef75d"
 
   url "https://voidboost.github.io/hdrezka-releases/HDrezka.dmg"
   name "HDrezka"
@@ -9,9 +9,9 @@ cask "hdrezka" do
 
   livecheck do
     url "https://voidboost.github.io/hdrezka-releases/appcast.xml"
-      strategy :sparkle do |items|
-        items.map(&:short_version)
-      end
+    strategy :sparkle do |items|
+      items.map(&:short_version)
+    end
   end
 
   auto_updates true
@@ -39,6 +39,6 @@ cask "hdrezka" do
 
     If Gatekeeper blocks launch, run:
 
-    xattr -dr com.apple.quarantine "/Applications/HDrezka.app"
+      xattr -dr com.apple.quarantine "/Applications/HDrezka.app"
   EOS
 end
