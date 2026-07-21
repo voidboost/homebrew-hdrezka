@@ -1,6 +1,6 @@
 cask "hdrezka" do
-  version "1.0.44"
-  sha256 "5ef380836072f2cb289872495f10db0c2e6ce13dd0a35639a26097c83fbc7edf"
+  version "1.0.45"
+  sha256 "f6093fad1df6888bb9b464e42a06e5826962f7787dd0a84ab445966bfc0e96e9"
 
   url "https://voidboost.github.io/hdrezka-releases/HDrezka.dmg"
   name "HDrezka"
