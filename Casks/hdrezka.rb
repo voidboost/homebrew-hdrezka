@@ -1,8 +1,9 @@
 cask "hdrezka" do
-  version "1.0.52"
-  sha256 "41ad6b6316cdecbe133488fed249f06d700b42b1e0a90c73fc6c475f8e4361a8"
+  version "1.0.53"
+  sha256 "d64c67451f5abde54d62b9a7198191fec9a72f13fb5763bd30a65a16318c5429"
 
-  url "https://voidboost.github.io/hdrezka-releases/HDrezka.dmg"
+  url "https://github.com/voidboost/hdrezka-swiftui/releases/download/#{version}/HDrezka.dmg"
+
   name "HDrezka"
   desc "Unofficial macOS client for HDrezka"
   homepage "https://github.com/voidboost/hdrezka-swiftui"
@@ -19,10 +20,13 @@ cask "hdrezka" do
 
   app "HDrezka.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/HDrezka.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+      args: [
+        "-dr",
+        "com.apple.quarantine",
+        "{{appdir}}/HDrezka.app",
+      ]
   end
 
   zap trash: [
