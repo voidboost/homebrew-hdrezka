@@ -1,6 +1,6 @@
 cask "hdrezka" do
-  version "1.0.78"
-  sha256 "808dabfeb528135eb159564f28ee14824748256e39aa9f090d03df6ca0977771"
+  version "1.0.79"
+  sha256 "c1199cfded6e33bffe64843ed23be01fbd51d09d40fecdaaba6d23837521353c"
 
   url "https://github.com/voidboost/hdrezka-swiftui/releases/download/#{version}/HDrezka.dmg"
 
